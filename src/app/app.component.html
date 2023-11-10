@@ -1,0 +1,6 @@
+<app-shopping-cart [value]="1"></app-shopping-cart>
+
+<app-shopping-search (search)="searchProduct($event)" ></app-shopping-search>
+<div *ngFor="let product of filterProduct">
+  {{product.name}}
+</div>
